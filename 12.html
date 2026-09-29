@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University - Rajkot</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        .title{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:20px auto;
+        }
+
+        .box{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        .box h2{
+            color:#003366;
+            margin-bottom:10px;
+        }
+
+        .box p{
+            line-height:1.6;
+        }
+
+        .box ul{
+            margin-left:20px;
+            line-height:1.8;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:10px;
+        }
+
+        table,th,td{
+            border:1px solid #ccc;
+        }
+
+        th{
+            background:#003366;
+            color:white;
+            padding:10px;
+        }
+
+        td{
+            padding:10px;
+            text-align:center;
+        }
+
+        tr:nth-child(even){
+            background:#f2f2f2;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:15px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            border:2px solid #ccc;
+            border-radius:5px;
+        }
+
+        .recruiters{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .company{
+            width:180px;
+            background:#e8f0ff;
+            padding:15px;
+            margin:10px;
+            text-align:center;
+            border:1px solid #003366;
+            font-weight:bold;
+        }
+
+        @media(max-width:768px){
+            .gallery{
+                grid-template-columns:repeat(2,1fr);
+            }
+
+            .title h1{
+                font-size:28px;
+            }
+
+            .title h3{
+                font-size:18px;
+            }
+
+            table{
+                font-size:14px;
+            }
+        }
+
+        @media(max-width:480px){
+            .container{
+                width:95%;
+            }
+
+            .box{
+                padding:15px;
+            }
+
+            .gallery{
+                grid-template-columns:1fr;
+            }
+
+            .gallery img{
+                height:220px;
+            }
+
+            .company{
+                width:100%;
+                margin:5px 0;
+            }
+
+            .title h1{
+                font-size:24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="title">
+    <h1>Marwadi University</h1>
+    <h3>Rajkot, Gujarat</h3>
+</div>
+
+<div class="container">
+
+    <div class="box">
+        <h2>About Marwadi University</h2>
+        <p>
+            Marwadi University is one of Gujarat's leading private universities,
+            located in Rajkot. It offers quality education in Engineering,
+            Management, Pharmacy, Computer Applications, Science, Law,
+            Commerce, Design, and many other disciplines. The university
+            focuses on academic excellence, innovation, research, and industry
+            collaboration.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Vision</h2>
+        <p>
+            To become a globally recognized university by providing quality
+            education, promoting innovation, and preparing students to become
+            responsible professionals and leaders.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Mission</h2>
+        <ul>
+            <li>Provide quality education with practical learning.</li>
+            <li>Encourage innovation and research.</li>
+            <li>Develop leadership and entrepreneurship skills.</li>
+            <li>Promote ethical values and social responsibility.</li>
+            <li>Build strong industry collaborations.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Programs Offered</h2>
+
+        <table>
+            <tr>
+                <th>Program</th>
+                <th>Duration</th>
+            </tr>
+            <tr><td>B.Tech</td><td>4 Years</td></tr>
+            <tr><td>M.Tech</td><td>2 Years</td></tr>
+            <tr><td>BBA</td><td>3 Years</td></tr>
+            <tr><td>MBA</td><td>2 Years</td></tr>
+            <tr><td>BCA</td><td>3 Years</td></tr>
+            <tr><td>MCA</td><td>2 Years</td></tr>
+            <tr><td>B.Com</td><td>3 Years</td></tr>
+            <tr><td>B.Pharm</td><td>4 Years</td></tr>
+        </table>
+    </div>
+
+    <div class="box">
+        <h2>Program Specific Outcomes</h2>
+        <ul>
+            <li>Develop strong technical and analytical skills.</li>
+            <li>Enhance problem-solving abilities.</li>
+            <li>Prepare students for industry and higher education.</li>
+            <li>Improve teamwork and communication skills.</li>
+            <li>Promote innovation and entrepreneurship.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>Computer Engineering</li>
+            <li>Information Technology</li>
+            <li>Mechanical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Electrical Engineering</li>
+            <li>Artificial Intelligence & Data Science</li>
+            <li>Cyber Security</li>
+            <li>Business Administration</li>
+            <li>Computer Applications</li>
+            <li>Commerce</li>
+            <li>Law</li>
+            <li>Pharmacy</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Image Gallery of Events</h2>
+
+        <div class="gallery">
+            <img src="images/advance-lab.jpg" alt="Advance Lab">
+            <img src="images/cafeteria.png" alt="Cafeteria">
+            <img src="images/festival.png" alt="Festival">
+            <img src="images/sports.png" alt="Sports">
+            <img src="images/student-club.jpg" alt="Student Club">
+            <img src="images/cultural-festival.jpg" alt="Cultural Festival">
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Top Recruiters</h2>
+
+        <div class="recruiters">
+            <div class="company">TCS</div>
+            <div class="company">Infosys</div>
+            <div class="company">Wipro</div>
+            <div class="company">Accenture</div>
+            <div class="company">Capgemini</div>
+            <div class="company">Cognizant</div>
+            <div class="company">IBM</div>
+            <div class="company">Tech Mahindra</div>
+            <div class="company">L&T</div>
+            <div class="company">Reliance</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
